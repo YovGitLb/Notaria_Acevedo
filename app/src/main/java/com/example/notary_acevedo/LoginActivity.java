@@ -44,6 +44,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         initListeners();
         initObjects();
 
+
     }
 
     private void initViews() {
@@ -74,14 +75,24 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
+        String admin=et_Email.getText().toString();
+        String pass=et_Password.getText().toString();
+
 
         switch (v.getId()) {
             case R.id.appCompatButtonLogin:
+                if(admin.equals("admin_notaria@gmail.com")&& pass.equals("12345"))
+                {
+                    Intent intentRegister = new Intent(getApplicationContext(), Adm_Activity.class);
+                    startActivity(intentRegister);
+                }
+
                 verifyFromSQLite();
                 break;
             case R.id.textViewLinkRegister:
                 Intent intentRegister = new Intent(getApplicationContext(), Registration_Activity.class);
                 startActivity(intentRegister);
+                emptyInputEditText();
                 break;
         }
 
@@ -102,14 +113,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 , et_Password.getText().toString().trim())) {
 
 
-            Intent accountsIntent = new Intent(activity, UserListActivity.class);
+            Intent accountsIntent = new Intent(activity, Opciones_Menu.class);
             accountsIntent.putExtra("EMAIL", et_Email.getText().toString().trim());
             emptyInputEditText();
             startActivity(accountsIntent);
 
 
         } else {
-            // Snack Bar to show success message that record is wrong
+
             Snackbar.make(nestedScrollView, getString(R.string.error_valid_email_password), Snackbar.LENGTH_LONG).show();
         }
 

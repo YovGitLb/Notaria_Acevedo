@@ -66,6 +66,10 @@ public class InputValidation {
         imm.hideSoftInputFromWindow(view.getWindowToken(), WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
 
+    public  static boolean vacio (String s) {
+        return s == null || s.trim().isEmpty();
+    }
+
 
 
 

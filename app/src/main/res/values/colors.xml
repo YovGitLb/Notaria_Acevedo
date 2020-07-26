@@ -5,5 +5,9 @@
     <color name="colorAccent">#080101</color>
     <color name="colorBackground">#FAF8F8</color>
     <color name="colorText">#FFFFFF</color>
-    <color name="colorTextHint">#51d8c7</color>an
+    <color name="colorTextHint">#51d8c7</color>
+    <color name="colorNotarial">#323754</color>
+
+
+
 </resources>

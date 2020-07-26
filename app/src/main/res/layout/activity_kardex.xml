@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nestedScrollView_expedientes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lay_Kardex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+
+        <EditText
+            android:id="@+id/et_Kardex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_kardex"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@android:color/widget_edittext_dark"
+             />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Spinner
+        android:id="@+id/sp_servicios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/sp_abogados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+         />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lay_Dni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="8"
+        app:errorEnabled="true"
+        android:layout_marginTop="0dp"
+        >
+
+
+        <EditText
+            android:id="@+id/et_Dni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_Dni"
+            android:layout_marginBottom="5dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@android:color/widget_edittext_dark"
+             />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lay_Participante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+
+        <EditText
+            android:id="@+id/et_Participante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_Participante"
+            android:layout_marginBottom="5dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@android:color/widget_edittext_dark"
+             />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="67dp"
+            app:srcCompat="@android:drawable/ic_input_add">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <EditText
+            android:id="@+id/et_dni2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_Dni"
+            android:inputType="text"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:textColor="@android:color/widget_edittext_dark"
+           />
+
+
+
+
+        <EditText
+            android:id="@+id/et_particpante2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_Participante"
+            android:visibility="gone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@android:color/widget_edittext_dark"
+             />
+
+
+    <Spinner
+        android:id="@+id/sp_estado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnregistrarkardex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#323754"
+        android:textColor="@color/colorBackground"
+        android:text="@string/text_register">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -41,7 +41,7 @@ public class Registration_Activity extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_);
 
-        getSupportActionBar().hide();
+       //getSupportActionBar().hide();
 
         initViews();
         initListeners();
@@ -104,7 +104,7 @@ public class Registration_Activity extends AppCompatActivity implements View.OnC
         if (!inputValidation.isInputEditTextFilled(et_Email, lay_Email, getString(R.string.error_message_email))) {
             return;
         }
-        if (!inputValidation.isInputEditTextEmail(et_Email, lay_Email, getString(R.string.error_message_email))) {
+        if (!inputValidation.isInputEditTextEmail(et_Email, lay_Email, getString(R.string.error_message_password))) {
             return;
         }
         if (!inputValidation.isInputEditTextFilled(et_Password, lay_Password, getString(R.string.error_message_password))) {
